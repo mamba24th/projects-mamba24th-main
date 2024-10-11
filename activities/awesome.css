@@ -4,5 +4,5 @@ body {
     background-position: center; /* Centers the image */
 }
 h1, h2, h3, p, a {
-    color: white; /* Applies to headings, paragraphs, and links */
+    color: black; /* Applies to headings, paragraphs, and links */
 }
