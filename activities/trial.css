@@ -1,0 +1,18 @@
+body {
+    /* Gradient background */
+    background: linear-gradient(135deg, #FF6F61, #6FA3EF);
+    /* Fallback color */
+    background-color: #FF6F61;
+    /* Optional: Adding a subtle pattern (replace with your own) */
+    background-image: url('path/to/your/pattern.png'); /* Replace with your pattern image */
+    background-size: cover; /* Ensure the pattern covers the entire background */
+    background-blend-mode: multiply; /* Blend the gradient with the pattern */
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 20px; /* Add some padding */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+}

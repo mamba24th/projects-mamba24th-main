@@ -1,0 +1,65 @@
+/* Default styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light background for easy readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark background for emphasis */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for links in the navigation */
+nav a {
+    color: #ff6b6b; /* Bright color to draw attention to links */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #555; /* Less bright color on hover */
+}
+
+/* Main section styling */
+main {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Class selector for cursive text */
+.cursive-text {
+    font-family: "Comic Sans MS", "Brush Script MT", cursive;
+}
+
+/* ID selector for highlighting important section */
+#highlight {
+    background-color: #ffd700; /* Gold background to emphasize important text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Span tag styling for special text */
+span.special-text {
+    color: #007bff; /* Blue to highlight specific words */
+    font-style: italic;
+}
