@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* Wrapper for centering content */
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-image: url('gotham-background.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: content-box;
+    padding: 20px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+figure {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 250px;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: lightgray;
+}
+
+/* Footer */
+footer {
+    background-image: url('bat-logo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Typography Adjustments */
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+/* Box Model Adjustments */
+header, footer {
+    height: 150px;
+}
+
+main {
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Font Customizations */
+body {
+    font-family: 'Verdana', sans-serif;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
