@@ -83,6 +83,9 @@ footer {
     padding: 40px 0;
     text-align: left;
     color: white;
+    background-size: 30px 30px; /* Set the size of the logo */
+    background-origin: content-box;
+    background-clip: border-box;
 }
 
 /* Typography Adjustments */
