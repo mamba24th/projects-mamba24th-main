@@ -76,7 +76,7 @@ figcaption {
 
 /* Footer */
 footer {
-    background-image: url('batmanlogo.jpg'); /* Update to your file path */
+    background-image: url('batmanLogo.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
