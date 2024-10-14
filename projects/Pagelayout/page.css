@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-image: url('gothamCity.jpeg');
+    background-image: url('gothamCity.jpg');
     background-size: cover;
     background-clip: border-box;
     background-origin: content-box;
@@ -76,7 +76,7 @@ figcaption {
 
 /* Footer */
 footer {
-    background-image: url('batmanLogo.png');
+    background-image: url('batmanlogo.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
