@@ -78,7 +78,7 @@ figcaption {
 footer {
     background-image: url('batmanlogo.jpg'); 
     background-size: contain;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     padding: 40px 0;
     text-align: left;
