@@ -18,7 +18,7 @@ header {
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #0d6a81;
+    background-color: hsl(192, 65%, 49%);
     padding: 10px;
 }
 nav a {
