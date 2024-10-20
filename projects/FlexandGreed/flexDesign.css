@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 header {
-    background-color: #333;
+    background-color: #0d6a81;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -59,7 +59,7 @@ aside {
     border-radius: 5px;
 }
 footer {
-    background-color: #333;
+    background-color: #0d6a81;
     color: #fff;
     padding: 20px;
 }
