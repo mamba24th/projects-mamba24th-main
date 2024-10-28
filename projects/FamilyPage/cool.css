@@ -36,7 +36,6 @@ nav a {
 /* Content Wrapper */
 .content-wrapper {
   display: flex;
-  flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -44,6 +43,7 @@ nav a {
 .sidebar {
   flex: 1 1 25%;
   padding: 2rem;
+  width: 20;
 }
 
 .sidebar figure {
@@ -62,9 +62,7 @@ nav a {
 
 /* Main Content Area */
 main {
-  flex: 1 1 75%;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
@@ -104,7 +102,9 @@ footer {
       order: 2;
       flex: 1 1 100%;
   }
-  
+  .content-wrapper {
+    flex-direction: column;
+  }
   main {
       flex-direction: column;
   }
