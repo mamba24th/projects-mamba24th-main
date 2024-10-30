@@ -21,7 +21,7 @@ body{
 
 .schedule tbody tr:nth-child(even){
     background-color: lightgray;
-    color: white;
+    color: black;
 }
 
 .schedule tfoot {
