@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href="tables.css">
+    </head>
+    <body>
+        <header><h1>My Class Schedule</h1></header>
+        <main>
+            <table class="schedule">
+                <thead>
+                <tr>
+                    <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Religion</td><td>250</td><td>8:00AM-8:50AM</td><td rowspan="1">Stake Center CH2D</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>140</td><td>11:00AM-11:50AM</td><td>Portables P3</td><td>3.00</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td><td>101</td><td>12:00PM-12:50PM</td><td>Mckay Classroom Building 129</td><td>4.00</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>202</td><td>1:30PM-2:45PM</td><td>Portables P1</td><td>3.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+            </table>
+        </main>
+    </body>
+        <footer>
+            <p>&copy; 2024 Allen Yusi</p>
+     </footer>
+
+</html>
