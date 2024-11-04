@@ -5,14 +5,17 @@
     box-sizing: border-box;
   }
   
-  body {
+  html, body {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
   }
   
   /* Header Styling */
   header {
-    background-color: #333;
+    background-color: #054977;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -21,7 +24,7 @@
   /* Navigation Styling */
   nav ul {
     list-style-type: none;
-    background-color: #444;
+    background-color: #a30808;
     overflow: hidden;
     text-align: center;
     padding: 0.5em 0;
@@ -41,6 +44,7 @@
   .container {
     display: flex;
     padding: 20px;
+    flex: 1; /* Allows container to grow and push footer to bottom */
   }
   
   /* Main Content */
@@ -91,7 +95,7 @@
   
   /* Footer Styling */
   footer {
-    background-color: #333;
+    background-color: #054977;
     color: #fff;
     text-align: center;
     padding: 1em 0;
