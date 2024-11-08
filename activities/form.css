@@ -1,0 +1,33 @@
+body {
+    background-color: aquamarine;
+}
+
+header {
+    text-align: center;
+}
+
+fieldset{
+    box-shadow: 3px 3px 3px darkblue;
+    background-color: antiquewhite;
+}
+
+legend{
+    border: medium solid black;
+    background-color:whitesmoke ;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
