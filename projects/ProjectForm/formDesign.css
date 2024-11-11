@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+label {
+    flex: 1;
+    margin-right: 1em;
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
+    flex: 2;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+/* Button Styling */
+button {
+    padding: 0.8em 1.5em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-bottom: 0.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 1em;
+    }
+}
