@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<head>
+    <div style="text-align: center;"><h1>Engagement - Form Processing with JavaScript</h1></div>
+        </head>
+    <form acttion =  "processing.html" method ="post">
+        <fieldset>
+            <legend>Sign up</legend>
+            <div class ="form-row">
+            First Name: <input type = "text" id = "first" name = "first" value = "Wayne" required><br>
+                 </div>
+             <div class ="form-row">
+             Last Name: <input type = "text" name = "last"><br>
+                 </div>
+             <div class ="form-row">
+             Password: <input type = "password" name = "pass"><br>
+                 </div>
+             <input type = "checkbox" name ="remember" checked> Remember Me<br>
+             Grade:<br>
+             <input type = "radio" name ="grade"  value ="Freshman"> Freshman<br>
+             <input type = "radio" name ="grade" value ="Sophomore"> Sophomore<br>
+             <input type = "radio" name ="grade" value ="Junior"> Junior<br>
+             <input type = "radio" name ="different"  value ="Senior"> Senior<br>
+             <input type ="submit"> <br>
+             <div>
+                 Comments: <br><textarea name = "comment" id =""></textarea>
+             </div>
+             <p>Gender:</p>
+
+            <form>
+            <input type="radio" id="male" name="choose_gender" value="Male">
+             <label for="html">Male</label><br>
+             <input type="radio" id="female" name="choose_gender" value="Female">
+             <label for="css">Female</label><br>
+            </form> 
+        </fieldset>
+       
+    </form>
+    <br>
+
+
+</body>
+</html>
+
+    <br>
+    <body>
+        <h1>1. What is JavaScript? How did it get its name?</h1>
+            <p>JavaScript is a programming language used primarily for creating interactive effects within web browsers. It got its name because it was initially developed by Netscape and originally called "JScript." It was later renamed to JavaScript as part of a marketing strategy to ride on the popularity of Java at the time.</p>
+        <h1>2.What are the two ways you can run JavaScript?</h1>
+            <p>In the very beginning you can only allow to run your program in the browser. DOM- document object model. In the browser (client-side), typically in the developer console or through script tags in HTML. On the server (server-side) using platforms like Node.js.</p>
+        <h1>3. What was the most popular front-end js library?</h1>
+            <p>jQuery was the most popular front-end JS library for many years, simplifying HTML DOM - document object model manipulation and event handling.</p>
+                <h1>4. What is the most popular front-end js library today?</h1>
+                <p>React is currently the most popular front-end JS library, used for building user interfaces, especially for single-page applications.</p>
+    
+    </body>
+        <br>
+    <footer>
+        <p>&copy; 2024 Allen Yusi</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', funtion(event) {
+            event.preventDefault();
+            const firstname = document.getElementById('firstName').value;
+            const lastname = document.getElementById('lastName').value;
+            }
+            console.log(formData);
+            alert("You submitted the form!");
+        });
+    </script>
+</body>
+</html>
