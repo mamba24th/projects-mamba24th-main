@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<head>
+    <div style="text-align: center;"><h1>Engagement - Form Processing with JavaScript</h1></div>
+        </head>
+        <div> id="message"></div>
+    <form acttion =  "processing.html" method ="post">
+        <fieldset>
+            <legend>Sign up</legend>
+
+            <div class ="form-row">
+                <label for = "first">First name:</label>
+             <input type = "text" id = "first" name = "first" value = "Wayne" required>
+                 </div>
+
+             <div class ="form-row">
+                <label for = "last">Last name:</label>
+              <input type = "text" id="last" name = "last" placeholder="lastname">
+                 </div>
+
+             <div class ="form-row">
+                <label for = "password">password:</label>
+             <input type = "password" id="password" name = "password">
+                 </div>
+
+            <div class ="form-row">
+                <label for = "email"> Email:</label>
+                <input type ="text" id = "email" name = "email" required>
+                 </div>
+                 
+
+            <div class ="form-row">
+                <Label for ="dob"> Date of Birth:</label>
+                <input type = "date" id = "dob" name = "dob">
+            </div>
+
+
+
+             <input type = "checkbox" name ="remember" checked> Remember Me
+             <br>
+
+
+             Grade:<br>
+             <input type = "radio" name ="grade"  value ="Freshman"> Freshman<br>
+             <input type = "radio" name ="grade" value ="Sophomore"> Sophomore<br>
+             <input type = "radio" name ="grade" value ="Junior"> Junior<br>
+             <input type = "radio" name ="different"  value ="Senior"> Senior<br>
+             <input type ="submit"> <br>
+
+             
+
+             <div class = "form-row">
+                <label for = "comments">Comments:</label><br>
+                <textarea id = "comment" name ="comment"></textarea>
+             </div>
+
+
+             <p>Gender:</p>
+
+            <form>
+            <input type="radio" id="male" name="choose_gender" value="Male">
+             <label for="html">Male</label><br>
+             <input type="radio" id="female" name="choose_gender" value="Female">
+             <label for="css">Female</label><br>
+            </form> 
+        </fieldset>
+       
+    </form>
+    <br>
+
+
+</body>
+</html>
+
+    <br>
+    <body>
+        <h1>1. What is AJAX?</h1>
+            <p>AJAX (Asynchronous JavaScript and XML) is a technique for making requests to a server and updating web pages without reloading the whole page.</p>
+        <h1>2.Why do you put your JS Code in a separate file?</h1>
+            <p>Putting JS code in a separate file improves code organization, reusability, and maintainability, and helps with faster page load times due to caching.</p>
+        
+    
+    </body>
+        <br>
+    <footer>
+        <p>&copy; 2024 Allen Yusi</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstname = document.getElementById('firstName').value;
+            const lastname = document.getElementById('lastName').value;
+            const age = document.getElementById('age').value;
+            const formData = {
+                firstname : firstname,
+                lastname : lastname,
+                age: age
+            }
+            if (!firstname || !lastname) {
+                alert("First name and last name required!");
+                return;
+            }
+            if (!age || age < 18) {
+                alert("You must be 18 to sign up!");
+                return;
+            }
+
+            const formData1 = {
+                firstName: firstname,
+                lastname: lastname,
+                password: document.getElementById('password').value,
+                state: document.getElementById('state').value
+            };
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit.js", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200 ) {
+                    const response = JSON.parse(xhr.responseText)
+                    documnet.getElementById("message").innerHTML = response.message
+                }else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                
+                }
+            };
+            xhr.send(JSON.stringify(formData));
+
+            console.log(formData);
+
+        });
+    </script>
+</body>
+</html>
