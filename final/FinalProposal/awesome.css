@@ -1,0 +1,16 @@
+body {
+    background-image: url('galaxy.jpg'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the entire screen */
+    background-position: center;
+
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* Set all text to white */
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li, div {
+    color: #ffffff; /* Make sure all headings, paragraphs, links, and other text elements are white */
+}
+
