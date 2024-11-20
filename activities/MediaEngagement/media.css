@@ -14,12 +14,28 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, div {
     color: #ffffff; /* Make sure all headings, paragraphs, links, and other text elements are white */
 }
 
+.btn {
+    display: block;
+    padding: 10px;
+    color: aquamarine;
+    background-color: blue;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
+
 #byuhcampus{
     width: 350px;
-    margin: 0;
+    margin: 30px 50px;
     border: thin solid black;
     box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
-    transform: translate(150px,50px);
+    transform: rotate(8deg);
 }
 
 #byuhcampus img {
