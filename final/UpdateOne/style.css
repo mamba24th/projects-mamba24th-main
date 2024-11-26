@@ -3,10 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('awesome.PNG') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Adjust text color for better readability */
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent to blend with the background */
     color: white;
     padding: 1em 0;
 }
@@ -36,6 +39,10 @@ header {
 
 main {
     padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for content readability */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .banner, .content-image {
@@ -43,12 +50,16 @@ main {
     max-width: 600px;
     display: block;
     margin: 20px auto;
+    border: 2px solid #fff; /* Add a border for better visibility */
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    background: rgba(255, 255, 255, 0.8); /* Light background for better readability */
+    color: #000; /* Dark text for contrast */
 }
 
 table, th, td {
@@ -67,9 +78,10 @@ caption {
 
 footer {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9);
     padding: 10px 0;
     margin-top: 20px;
+    color: #333;
 }
 
 /* Responsive design */
