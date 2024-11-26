@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover, .navbar .active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.banner, .content-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        display: block;
+        text-align: center;
+    }
+}
