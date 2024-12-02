@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="guitar.html">Guitar</a></li>
+                <li><a href="skateboarding.html">Skateboarding</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p>Have feedback or questions? Feel free to reach out!</p>
+        <form action="process-form.php" method="POST" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="hobby">Favorite Hobby:</label>
+            <select id="hobby" name="hobby">
+                <option value="gaming">Gaming</option>
+                <option value="guitar">Guitar</option>
+                <option value="skateboarding">Skateboarding</option>
+            </select>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Allen Yusi 2024</p>
+    </footer>
+</body>
+</html>
