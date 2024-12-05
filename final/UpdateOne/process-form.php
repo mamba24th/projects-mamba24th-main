@@ -1,4 +1,9 @@
 <?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Check if the form is submitted via POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate form data
     $name = htmlspecialchars(trim($_POST['name']));
@@ -12,8 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Store or process the form data (e.g., send email or store in database)
-    // Example: Send email
+    // Store or process the form data (e.g., send email)
     $to = "your_email@example.com"; // Replace with your email
     $subject = "New Contact Form Submission";
     $body = "You have received a new message from your website contact form.\n\n".
@@ -26,7 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your message, $name. We will get back to you soon.";
+        // Thank you message after successful submission
+        echo "<h2>Thank you for your message, $name. We will get back to you soon.</h2>";
     } else {
         echo "Sorry, there was an error sending your message. Please try again later.";
     }
