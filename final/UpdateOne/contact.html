@@ -1,51 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gaming.html">Playing Video Games</a></li>
-                <li><a href="guitar.html">Playing Guitar</a></li>
-                <li><a href="skateboarding.html">Skateboarding</a></li>
-                <li><a href="resources.html">Hobby Resources</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contact Me</h1>
-        <p>Have feedback or questions? Feel free to reach out!</p>
-        <form action="process-form.php" method="POST" class="contact-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="hobby">Favorite Hobby:</label>
-            <select id="hobby" name="hobby">
-                <option value="gaming">Gaming</option>
-                <option value="guitar">Guitar</option>
-                <option value="skateboarding">Skateboarding</option>
-            </select>
-            
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; Allen Yusi 2024</p>
-    </footer>
-</body>
-</html>
+<form id="voteForm">
+    <div class="formSUD">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    </div>
+    <div class="formSUD">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required><br><br>
+    </div>
+    <div class="formSUD">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    </div>
+    <div class="formSUD">
+        <label for="favorite">Favorite Hobby:</label><br>
+        <select id="favorite" name="favorite" required>
+            <option value="" disabled selected>Select your favorite hobby</option>
+            <option value="Playing Guitar">Playing Guitar</option>
+            <option value="Skateboarding">Skateboarding</option>
+            <option value="Playing Video Games">Playing Video Games</option>
+        </select><br><br>
+    </div>
+    <button type="submit">Submit Vote</button>
+</form>
+<div id="result" class="success"></div>
