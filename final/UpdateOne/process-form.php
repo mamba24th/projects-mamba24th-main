@@ -1,29 +1,25 @@
-<form id="voteForm">
-    <div class="formSUD">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-    </div>
-    <div class="formSUD">
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required><br><br>
-    </div>
-    <div class="formSUD">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-    </div>
-    <div class="formSUD">
-        <label for="favorite">Favorite Hobby:</label><br>
-        <select id="favorite" name="favorite" required>
-            <option value="" disabled selected>Select your favorite hobby</option>
-            <option value="Playing Guitar">Playing Guitar</option>
-            <option value="Skateboarding">Skateboarding</option>
-            <option value="Playing Video Games">Playing Video Games</option>
-        </select><br><br>
-    </div>
-    <div class="formSUD">
-        <label for="feedback">Your Feedback:</label><br>
-        <textarea id="feedback" name="feedback" rows="4" placeholder="Leave your feedback or comments here..." required></textarea><br><br>
-    </div>
-    <button type="submit">Submit Vote</button>
-</form>
-<div id="result" class="success"></div>
+document.getElementById("voteForm").addEventListener("submit", function (event) {
+    // Prevent default form submission behavior
+    event.preventDefault();
+
+    // Retrieve and validate form data
+    const formData = {
+        name: document.getElementById("name").value.trim(),
+        age: document.getElementById("age").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        favorite: document.getElementById("favorite").value,
+    };
+
+    // Check if all required fields are filled
+    if (!formData.name || !formData.age || !formData.email || !formData.favorite) {
+        alert("Please fill in all the required fields.");
+        return;
+    }
+
+    // Display a confirmation message
+    const resultDiv = document.getElementById("result");
+    resultDiv.textContent = `Thank you, ${formData.name}! Your vote for ${formData.favorite} has been submitted.`;
+
+    // Clear the form
+    document.getElementById("voteForm").reset();
+});
